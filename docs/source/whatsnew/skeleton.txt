@@ -81,6 +81,10 @@ Bug Fixes
   ``_ClassicRiskMetrics._periods_in_range`` (:issue:`xxx`).
 - Replace deprecated ``pd.Timestamp.utcnow()`` with ``pd.Timestamp.now("UTC")``
   (:issue:`xxx`).
+- Fix ``DataPortal._first_trading_minute`` set to ``(None, None)`` tuple instead
+  of ``None`` when no first trading day is configured (:issue:`xxx`).
+- Fix ``DataPortal._get_daily_spot_value`` passing ``"minute"`` instead of
+  ``"daily"`` as data frequency to ``get_adjusted_value`` (:issue:`xxx`).
 
 Performance
 ~~~~~~~~~~~
